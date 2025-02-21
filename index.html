@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Amigo Secreto</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    <script type="module" src="./script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>🎲 Sorteo Mágico 🎲</h1>
+
+        <div class="input-section">
+            <input type="text" id="participantInput" placeholder="Nombre del participante" />
+            <button id="addButton">Agregar</button>
+        </div>
+
+        <div class="participants-container">
+            <h2>Participantes</h2>
+            <ul id="participantsList"></ul>
+            <button id="clearAll" class="clear-button">Limpiar Todo</button>
+        </div>
+
+        <button id="selectWinner" class="winner-button">¡Seleccionar Ganador!</button>
+
+        <div id="winnerSection" class="winner-section hidden">
+            <h2>¡El ganador es!</h2>
+            <p id="winnerName"></p>
+        </div>
+
+        <div class="history-section">
+            <h2>Historial de Ganadores</h2>
+            <ul id="winnersHistory"></ul>
+        </div>
+    </div>
+</body>
+
+</html>
